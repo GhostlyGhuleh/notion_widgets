@@ -1,101 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>SCM Music Player Widget</title>
-  <style>
-    /* Custom styles for the SCM Music Player */
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #transparent; /* Change the background color */
-      margin: 0;
-      padding: 20px;
-    }
-
-    /* Modify the style for the SCM Music Player container */
-    #scm-music-player {
-      width: 300px; /* Adjust the width as needed */
-      margin: 0 auto;
-    }
-
-    /* Modify the style for the SCM Music Player controls */
-    .scm-player-controls {
-      display: flex;
-      justify-content: space-between;
-      margin-top: 10px;
-    }
-
-    .scm-player-controls button {
-      background-color: #333;
-      color: #fff;
-      border: none;
-      padding: 10px 20px;
-      cursor: pointer;
-      border-radius: 5px;
-    }
-
-    .scm-player-controls button:hover {
-      background-color: #555;
-    }
-
-    .scm-player-controls button:focus {
-      outline: none;
-    }
-
-    /* Modify the style for the playlist item */
-    .scm-playlist-item {
-      margin-bottom: 10px;
-      padding: 5px;
-      background-color: #fff;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-
-    .scm-playlist-item:hover {
-      background-color: #f5f5f5;
-    }
-  </style>
-</head>
-<body>
-
+  <body>
 <!-- SCM Music Player https://www.scmplayer.net -->
 <script type="text/javascript" src="https://www.scmplayer.net/script.js" 
 data-config="{'skin':'skins/black/skin.css','volume':36,'autoplay':false,'shuffle':false,'repeat':0,'placement':'top','showplaylist':false,'playlist':[{'title':'Cardigan - Taylor Swift','url':'https://www.youtube.com/watch?v=zLSUp53y-HQ'}]}" ></script>
 <!-- SCM Music Player script end -->
-
-
-<!-- Initialize the SCM Music Player -->
-<script>
-  // Initialize the SCM Music Player
-  function initializeSCMMusicPlayer() {
-    const config = {
-      skin: 'skins/black/skin.css',
-      volume: 20,
-      autoplay: true,
-      shuffle: false,
-      repeat: 1,
-      placement: 'top',
-      showplaylist: false,
-      playlist: [
-        {
-          title: 'Cardigan - Taylor Swift',
-          url: 'https://www.youtube.com/watch?v=zLSUp53y-HQ'
-        }
-        // Add more playlist items as needed
-      ]
-    };
-
-    // Load the SCM Music Player script dynamically
-    const script = document.createElement('script');
-    script.type = 'text/javascript';
-    script.src = 'https://www.scmplayer.net/script.js';
-    script.setAttribute('data-config', JSON.stringify(config));
-
-    // Append the script to the document
-    document.body.appendChild(script);
-  }
-
-  // Call the function to initialize the SCM Music Player
-  initializeSCMMusicPlayer();
 </script>
 
 </body>
